@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+      .logo-container {
+          display: flex;
+          align-items: center;
+      }
+
+      .logo-container a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: inherit;
+      }
+
+      .logo img {
+          width: 120px; /* Adjust the width as needed */
+          height: 100px; /* Adjust the height as needed */
+      }
+
+      .logo-text {
+          margin-left: 10px; /* Adjust the margin as needed */
+          font-size: 18px; /* Adjust the font size as needed */
+      }
+
+      #menu {
+          display: flex;
+          justify-content: space-between; /* Adjust as needed */
+      }
+  </style>
+  </head>
+<body>
+  <nav id="menu">
+    <div class="logo logo-container">
+        <a href="./index.html"><img src="imagens/logo marca instituto.png" alt="logo" width="120" height="100">
+            <div class="logo-text">
+                <p>Instituto</p>
+                <p>Patitas</p>
+                <p>Pet</p>
+            </div>
+        </a>
+    </div>
+
+        <ul id="botoesMenu">
+          <a href="index.html" class="button-menu">
+              <li>
+                  <p>Página Inicial</p>
+              </li>
+          </a>
+          <a href="hotel.html" class="button-menu">
+              <li>
+                  <p>Hotel</p>
+              </li>
+          </a>
+          <a href="petshop.html" class="button-menu">
+              <li>
+                  <p>Pet Shop</p>
+              </li>
+          </a>
+          <a href="veterinarios.html" class="button-menu">
+              <li>
+                  <p>Veterinário</p>
+              </li>
+          </a>
+          <a href="adoçao.html" class="button-menu">
+              <li>
+                  <p>Adoção</p>
+              </li>
+          </a>
+          <a href="formulario.html" class="button-menu">
+              <li>
+                  <p>Contatos</p>
+              </li>
+          </a>
+      </ul>
+    </nav>
+    
+    <h1>Entre em contato conosco!</h1>
+
+    <main>
+    <div id="informacoes">
+        <p>Você tem alguma pergunta ou interesse em conhecer nossa franquia? É só entrar em contato com a gente!</p>
+        <p>Para elogios, críticas ou sugestões basta preencher o formulário ao lado! Comentários são sempre bem-vindos em uma volta pelo mundo!</p>
+       
+        <h2>ENDEREÇOS E CIDADES</h2>
+
+        <div class="container">
+            <div class="select-box">
+              <div class="options-container">
+                <div class="option">
+                  <input type="radio" class="radio" id="automobiles" name="category"/>
+                  <label for="automobiles">Belo Horizonte - MG</label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="film" name="category" />
+                  <label for="film">Florianópolis - SC</label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="science" name="category" />
+                  <label for="science">Rio de Janeiro - RJ</label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="art" name="category" />
+                  <label for="art">São Paulo - SP</label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="music" name="category" />
+                  <label for="music">Salvador - BA</label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="travel" name="category" />
+                  <label for="travel">Natal - RN</label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="sports" name="category" />
+                  <label for="sports">Vitória - ES</label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="news" name="category" />
+                  <label for="news">Curitiba - PR</label>
+                </div>
+      
+                <div class="option">
+                  <input type="radio" class="radio" id="tutorials" name="category" />
+                  <label for="tutorials">Goiânia - GO</label>
+                </div>
+              </div>
+      
+              <div class="selected">
+                Escolha uma cidade
+              </div>
+            </div>
+          </div>
+        <p id="endereco"></p>
+        <H2>TELEFONE PARA CONTATO</H2>
+        
+        <p>+55 (00) 0000-0000</p> 
+
+       <H2>EMAIL PARA CONTATO</H2>
+        
+        <p>bonapettitrestaurante@gmail.com</p> 
+        
+        <h2>REDES SOCIAIS</h2>
+        
+        <div class="redessociais">
+          <img src="imagens/formulario/pinpng.com-redes-sociais-png-6509486.png" alt="icones">
+        </div>
+       
+    </div>
+        
+           
+
+        <div id="w">
+            <h2>NOS ENVIE SUGESTÕES, CRÍTICAS OU ELOGIOS!</h2>
+
+            <div class="formulario">
+                <div class="nome">
+                    <label for="nome">Qual seu nome?</label>
+                    <textarea id="txtArea" rows="2" cols="50"></textarea>
+                </div>
+            
+                <div class="email">
+                    <label for="email">Qual seu email?</label>
+                    <textarea id="txtArea" rows="2" cols="50"></textarea>
+                </div>
+            
+                <div class="mensagem">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="txtArea" rows="10" cols="60"></textarea>
+                </div>
+            
+                <div class="Enviar">
+                    <button onclick="">Enviar</button>
+                </div>
+            </div>
+        
+    </div>
+</main>
+
+<footer>
+      <div class="container-footer">
+
+        <div id="linha-footer"></div>
+
+          <div class="row-footer">
+
+              <div class="footer-col">
+                  <ul>
+                      <li><a href="historia.html"> Quem somos </a></li>
+                      <li><a href="politica-de-privacidade.html"> Política de privacidade </a></li>
+                      <li><a href="trabalhe-conosco.html"> Trabalhe conosco </a></li>
+                      <li><a href="formulario.html"> Cidades e franquias </a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <ul>
+                      <li><a href="index.html">Lançamentos</a></li>
+                      <li><a href="index.html">Happy Hour</a></li>
+                      <li><a href="formulario.html">Contatos</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                  <ul>
+                      <li><a href="colaboradores.html">Colaboradores do projeto</a></li>
+                  </ul>
+                  <div class="redes-sociais">
+                      <a href="https://twitter.com/home" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
+                      <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook-f"></i> </a>
+                      <a href="https://www.whatsapp.com/" target="_blank"> <i class="fa-brands fa-whatsapp"> </i></a>
+                      <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+    </footer>
+
+   <script src="js/formulario.js"></script>
+</body>
+</html>

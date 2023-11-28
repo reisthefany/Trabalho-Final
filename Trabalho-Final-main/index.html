@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas Pet</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        .logo-text {
+            margin-left: 10px; /* ajuste a margem conforme necessário */
+            font-size: 18px; /* ajuste o tamanho da fonte conforme necessário */
+        }
+    </style>
+  </head>
+<body>
+  <nav id="menu">
+    <div class="logo logo-container">
+        <a href="./index.html"><img src="imagens/logo marca instituto.png" alt="logo" width="130" height="110">
+            <div class="logo-text">
+                <p>Instituto</p>
+                <p>Patitas</p>
+                <p>Pet</p>
+            </div>
+        </a>
+    </div>
+        <ul id="botoesMenu">
+          <a href="hotel.html" class="button-menu">
+              <li>
+                  <p>Hotel</p>
+              </li>
+          </a>
+          <a href="petshop.html" class="button-menu">
+              <li>
+                  <p>Pet Shop</p>
+              </li>
+          </a>
+          <a href="veterinarios.html" class="button-menu">
+              <li>
+                  <p>Veterinário</p>
+              </li>
+          </a>
+          <a href="adoçao.html" class="button-menu">
+              <li>
+                  <p>Adoção</p>
+              </li>
+          </a>
+          <a href="formulario.html" class="button-menu">
+              <li>
+                  <p>Contatos</p>
+              </li>
+          </a>
+      </ul>
+
+    </nav>
+    
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="imagens/index/Campanha de Adoçao.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="imagens/index/propagandanatal.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+      <img src="imagens/index/propagandavinhos.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    <section class="row">
+      <div style="flex: 2">
+        <a href="veterinarios.html">
+          <img src="imagens/index/Centro Veterinário.png" alt="#" />
+        </a>
+      </div>
+    </section>
+    
+    <section class="row">
+      <div style="flex: 2">
+        <a href="adoçao.html">
+          <img src="imagens/index/Centro de Adoção.png" alt="#" />
+        </a>
+      </div>
+    </section>    
+
+    <section class="row">
+      <div style="flex: 2">
+        <a href="hotel.html">
+          <img src="imagens/index/Hotel Patitas.png" alt="#" />
+        </a>
+      </div>
+    </section>  
+    
+    <section class="row">
+      <div style="flex: 2">
+        <a href="petshop.html">
+          <img src="imagens/index/Pet Shop.png" alt="#" />
+        </a>
+      </div>
+    </section>  
+
+    <footer>
+      <div class="footer">
+          <div id="linha-footer"></div>
+  
+          <div class="row-footer">
+              <div class="footer-col">
+                  <ul>
+                      <li><a href="index.html">Novidades</a></li>
+                      <li><a href="colaboradores.html">Colaboradores do projeto</a></li>
+                      <li><a href="formulario.html">Contatos</a></li>
+                  </ul>
+              </div>
+  
+              <div class="footer-col">
+                  <ul>
+                  </ul>
+                  <div class="redes-sociais">
+                      <a href="https://twitter.com/home" target="_blank"> <i class="fa-brands fa-twitter"></i> </a>
+                      <a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook-f"></i> </a>
+                      <a href="https://www.whatsapp.com/" target="_blank"> <i class="fa-brands fa-whatsapp"> </i></a>
+                      <a href="https://instagram.com" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                  </div>
+
+                  <div class="imagem-rodape">
+                    <img src="imagens/logo marca instituto.png" alt="Imagem Rodapé" style="width: 230px; height: 200px; margin-left: 170%; margin-top: -45%;">
+                </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+      
+  <script src="js/index.js"></script>
+  <script src="js/style-slides.js"></script>
+
+</body>
+
+</html>

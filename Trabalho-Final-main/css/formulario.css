@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Katibeh&display=swap');
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px black;
+}
+
+.formulario div label{
+    font-size: 18px;
+}
+.formulario div {
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    outline: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+body{
+    background-color: #deb887;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+#informacoes{
+    border: 1px black solid;
+    background-color: black;
+    width: 50%;
+    padding: 40px;
+    text-align: justify;
+    margin: 20px;
+}
+
+#informacoes p{
+  font-family: Poppins, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+#w h2{
+    margin: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .select-box {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+  }
+  
+  .select-box .options-container {
+    background: #deb887;
+    color: #10a335;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+  
+    order: 1;
+  }
+  
+  .selected {
+    background: #deb887;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: black;
+    position: relative;
+    font-family: Poppins, sans-serif;
+    order: 0;
+    display: flex
+    contents
+    
+  }
+  
+  .selected::after {
+    content: "";
+    background: url("arrow-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+  
+    transition: all 0.4s;
+  }
+  
+  .select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+    font-family: Poppins, sans-serif;
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -6px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: #deb887;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .option,
+  .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .select-box .option:hover {
+    background: black;
+  }
+  
+  .select-box label {
+    cursor: pointer;
+  }
+  
+  .select-box .option .radio {
+    display: none;
+  }
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: Katibeh, sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: Dancing Script, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+.redessociais img{
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 190px;
+}
+
+.nome {
+  font-family: Poppins, sans-serif;
+}
+
+.email {
+  font-family: Poppins, sans-serif;
+}
+
+.mensagem {
+  font-family: Poppins, sans-serif;
+}
+
+button{
+  color: white;
+  background-color: black;
+}
+
+@media screen and (max-width: 1000px) {
+  #informacoes{
+    width: 83%;
+    margin: 0;
+  }
+  main {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
