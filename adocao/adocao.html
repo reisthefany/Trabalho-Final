@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configuração de caracteres e viewport para responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Título da página -->
+    <title>Adoção</title>
+    <!-- Importação de estilos externos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../estilo-padrao/header.css">
+    <link rel="stylesheet" href="../estilo-padrao/footer.css">
+    <link rel="icon" href="../img/favicon.ico">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-bar">
+            <!-- Logo e link para a página inicial -->
+            <a href="../index.html"><div class="alinhamento">
+            <img class="logo" src="../img/logo.jpeg" alt="">
+            <h1 class="instituto">Instituto <br>Patitas <br>Pet</h1>
+            </div></a>
+            <!-- Ícone do menu mobile e função de alternância -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <rect width="30" height="2" fill="#FFF"/>
+                    <rect y="7" width="30" height="2" fill="#FFF"/>
+                    <rect y="14" width="30" height="2" fill="#FFF"/>
+                    <rect y="21" width="30" height="2" fill="#FFF"/>
+                </svg>
+            </div>
+            <!-- Lista de navegação -->
+            <ul class="menu">
+                <li><a href="../hotel/index.html">Hotel</a></li>
+                <li><a href="../petshop/index.html">PetShop</a></li>
+                <li><a href="../veterinario/index.html">Veterinário</a></li>
+                <li><a href="../adocao/adocao.html">Adoção</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <div class="degrade">
+            <h1 class="title2">Adoção de Cães e Gatos</h1>
+            <div class="pure-g top">
+            <img class="pure-u-1-3 animal2" src="../img/adoçao2.png" alt="">
+            <p class="pure-u-1 pure-u-md-1-3">Aqui colocamos as fotos de alguns para que você possa se apaixonar por seus focinhos. Para conhecê-los pessoalmente, por favor nos escreva contando um pouco de você, de sua casa e da rotina de sua família para que possamos agendar uma visita: <a href="mailto:institutopatitaspet@yahoo.com.br?subject=Adoção&body=Escreva um pouco sobre você aqui">institutopatitaspet@yahoo.com.br</a>.</p>
+            <img class="pure-u-1-3 animal3" src="../img/adoçao2.png" alt="">
+            <img class="pure-u-1-3 animal1" src="../img/adoçao1.png" alt="">
+            </div>
+        </div>
+        <h2 class="faixa">Preencha as caracteristicas e nós indicamos o pet que combina com você!</h2>
+        <div id="quiz-container">
+            <div id="question-container">
+              <h2 id="question-text"></h2>
+              <ul id="options-list"></ul>
+            </div>
+            <div id="result-container" style="display: none;">
+              <h2 id="result-text"></h2>
+            </div>
+          </div>
+
+          <h3 class="title3">🐾 Novos peludos por aqui: 🐾</h3>
+          <div class="pets">
+            <div class="pet"> 
+                <img class="fotita" src="../img/Lara.png" alt=""> <h1 class="nome">Lara <br> <h4>9 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Nini.png" alt=""> <h1 class="nome">Nini <br> <h4>5 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Nina.png" alt=""> <h1 class="nome">Nina <br> <h4>3 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Pudim.png" alt=""> <h1 class="nome">Pudim <br> <h4>3 meses</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Cléo.png" alt=""> <h1 class="nome">Cléo <br> <h4>5 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Tuca.png" alt=""> <h1 class="nome">Tuca <br> <h4>13 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Grace.png" alt=""> <h1 class="nome">Grace <br> <h4>1 ano</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Mari.png" alt=""> <h1 class="nome">Mari <br> <h4>2 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Loirinho.png" alt=""> <h1 class="nome">Loirinho <br> <h4>7 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Chocolate.png" alt=""> <h1 class="nome">Chocolate <br> <h4>10 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Chili.png" alt=""> <h1 class="nome">Chilli <br> <h4>5 meses</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Vanila.png" alt=""> <h1 class="nome">Vanila <br> <h4>2 meses</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Xica.png" alt=""> <h1 class="nome">Xica <br> <h4>16 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Luna.png" alt=""> <h1 class="nome">Luna <br> <h4>1 ano</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Ocean.png" alt=""> <h1 class="nome">Ocean <br> <h4>2 meses</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Safi.png" alt=""> <h1 class="nome">Safi <br> <h4>3 meses</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Pluto.png" alt=""> <h1 class="nome">Pluto <br> <h4>8 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Manu.png" alt=""> <h1 class="nome">Manu <br> <h4>10 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Canjica.png" alt=""> <h1 class="nome">Canjica <br> <h4>2 meses</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/Amoreco.png" alt=""> <h1 class="nome">Amoreco <br> <h4>2 anos</h4></h1>
+            </div>
+            <div class="pet"> 
+                <img class="fotita" src="../img/amendoim.jpeg" alt=""> <h1 class="nome">Amendoim <br> <h4>3 meses</h4></h1>
+            </div>
+
+<!-- Rodapé -->
+<footer>
+    <div class="footer-bar pure-g">
+        <div class="pure-u-1 barrinha"></div>
+        <div class="pure-u-1 pure-u-md-1-3">
+            <ul class="menu2">
+                <li><a href="../hotel/index.html">Hotel</a></li>
+                <li><a href="../petshop/index.html">PetShop</a></li>
+                <li><a href="../veterinario/index.html">Veterinário</a></li>
+                <li><a href="../adocao/adocao.html">Adoção</a></li>
+            </ul>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3"> 
+            <a href=""><img class="icon-social" src="../img/insta.png" alt=""></a>
+            <a href=""><img class="icon-social" src="../img/face.png" alt=""></a>
+            <a href=""><img class="icon-social" src="../img/wa.png" alt=""></a>
+            <a href=""><img class="icon-social" src="../img/email.png" alt=""></a> 
+        </div>
+        <div class="pure-u-1 pure-u-md-1-3 logo-container"> <img class="logo" src="../img/logo.jpeg" alt=""></div>
+    </div>
+</footer>
+
+
+    <!-- Scripts para funcionalidades -->
+    <script>
+        // Função para alternar o menu mobile
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <script>
+        let dogPoints = 0;
+        let catPoints = 0;
+        let birdPoints = 0;
+        let fishPoints = 0;
+        let rabbitPoints = 0;
+
+        let currentQuestion = 1;
+
+        const questions = [
+        "Como você descreveria sua personalidade?",
+        "O que você prefere fazer em seu tempo livre?",
+        "Qual ambiente você prefere?",
+        "Qual sua comida favorita?",
+        "Qual sua atividade física preferida?",
+        "Como você reage em situações de estresse?",
+        "Escolha uma cor:",
+        "Qual é o seu tipo de filme favorito?"
+        ];
+
+        const options = [
+        ["Amigável", "Independente", "Curioso", "Calmo"],
+        ["Brincar ao ar livre", "Ler um livro", "Explorar novos lugares", "Cozinhar algo novo"],
+        ["Espaços abertos e ensolarados", "Lugares aconchegantes e tranquilos", "Qualquer lugar, desde que seja novo", "Em casa"],
+        ["Carnes e proteínas", "Comidas leves e saudáveis", "Experimentar novos pratos", "Vegetariano/Vegano"],
+        ["Correr ou praticar esportes", "Yoga ou meditação", "Caminhar ao ar livre", "Não sou muito fã de atividade física"],
+        ["Mantenho a calma e resolvo os problemas", "Preciso de um tempo sozinho", "Fico ansioso, mas tento encontrar uma solução", "Fico irritado facilmente"],
+        ["Azul", "Verde", "Amarelo", "Vermelho"],
+        ["Comédia", "Drama", "Aventura", "Romance"]
+        ];
+
+        function initQuiz() {
+        updateQuestion();
+        }
+
+        function selectOption(petIndex) {
+        switch (petIndex) {
+            case 0:
+            dogPoints++;
+            break;
+            case 1:
+            catPoints++;
+            break;
+            case 2:
+            birdPoints++;
+            break;
+            case 3:
+            fishPoints++;
+            break;
+            case 4:
+            rabbitPoints++;
+            break;
+        }
+
+        if (currentQuestion < 8) {
+            currentQuestion++;
+            updateQuestion();
+        } else {
+            showResult();
+        }
+        }
+
+function updateQuestion() {
+  const questionText = document.getElementById('question-text');
+  const optionsList = document.getElementById('options-list');
+  questionText.innerText = `Pergunta ${currentQuestion}: ${questions[currentQuestion - 1]}`;
+
+  // Limpa as opções anteriores
+  optionsList.innerHTML = '';
+
+  // Adiciona as novas opções com a classe "option"
+  options[currentQuestion - 1].forEach((option, index) => {
+    const li = document.createElement('li');
+    const button = document.createElement('button');
+    button.innerText = option;
+    button.className = 'option'; // Adiciona a classe "option"
+    button.addEventListener('click', () => selectOption(index));
+    li.appendChild(button);
+    optionsList.appendChild(li);
+  });
+}
+
+        function showResult() {
+        const resultContainer = document.getElementById('result-container');
+        const resultText = document.getElementById('result-text');
+
+        resultContainer.style.display = 'block';
+
+        // Determine o pet com a pontuação mais alta
+        const petScores = {
+            "Cachorro": dogPoints,
+            "Gato": catPoints,
+            "Pássaro": birdPoints,
+            "Peixe": fishPoints,
+            "Coelho": rabbitPoints
+        };
+
+        const maxScore = Math.max(...Object.values(petScores));
+        const result = Object.keys(petScores).find(pet => petScores[pet] === maxScore);
+
+        resultText.innerText = `Você combina com um ${result}!`;
+        }
+
+        // Inicia o quiz quando a página carrega
+        window.onload = initQuiz;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+/* Reset padrão */
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 100%;
+}
+
+/* Estilos para telas maiores */
+.header-bar {
+    background: #6834A9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; /* Adicionei esta linha para centralizar verticalmente */
+    padding: 0 40px;
+    padding-bottom: 20px;
+}
+
+.instituto {
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.alinhamento{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: 400;
+    list-style-type: none;
+    text-decoration: none;
+    margin: 20px 0px;
+    justify-content: flex-end;
+}
+
+header .menu li {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header ul{
+    width: 60%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFECF2;
+    transition: color 0.5s ease;
+}
+
+.menu a:hover {
+    color: #f29db6;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Estilos para telas menores (móveis) */
+@media screen and (max-width: 768px) {
+    
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 1;
+        font-size: 25px;
+        opacity: 0; /* Começa com opacidade 0 para esconder o menu */
+        max-height: 0; /* Começa com altura máxima 0 para esconder o menu */
+        overflow: hidden; /* Garante que o conteúdo do menu não seja visível quando a altura é 0 */
+        transition: max-height 1s ease, opacity 1s ease; /* Adiciona transição para a altura máxima e opacidade */
+    }
+    
+    .menu.active {
+        opacity: 1; /* Torna o menu visível quando ativo */
+        max-height: 500px; /* Altura máxima suficiente para exibir todos os itens do menu */
+    }
+
+    .menu a {
+        margin: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        cursor: pointer;
+        z-index: 2;
+    }
+}
+
+.basket {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.basket:hover {
+    background-color: #f29db6;
+}
+
+.icon-basket {
+    width: 80%;
+}

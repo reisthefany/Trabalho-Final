@@ -1,0 +1,117 @@
+html, body, main{
+    font-family: "Montserrat";
+}
+.degrade{
+    background-image: linear-gradient(to bottom, #6834A9, transparent);
+    color: white;
+    text-align: center;
+}
+.animal1, .animal2, animal3{
+    max-width: 200px;
+}
+.animal3{
+    display: none;
+}
+.title2{
+    font-size: 700%;
+    text-shadow: 5px 5px  rgb(250, 160, 227) ;
+}
+@media screen and (max-width: 768px){
+    .animal2{
+        display: none;
+    }
+    .animal3{
+        display: block;
+    }
+    .title2{
+        font-size: 70px;
+    }
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    margin: 0;
+}
+.faixa{
+    background-color: #6834A9;
+    color: white;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+}
+#quiz-container{
+    text-align: center;
+    background-color: rgb(243, 219, 255);
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.option{
+    list-style: none;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+    color: #6834A9;
+}
+#options-list {
+    list-style: none;
+  }
+h2{
+    color: #6834A9;
+}
+ul{
+    padding-left: 0;
+}
+
+p{
+    font-size: 30px;
+    text-shadow: 5px 2px 5px #6834A9;
+}
+.title3{
+    font-size: 40px;
+    text-align: center;
+    color: #6834A9;
+}
+.pets{
+    padding: 40px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pet{
+    height: 370px;
+    width: 300px;
+    background-color: #6834A9;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.fotita{
+    width: 250px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+.nome{
+    text-align: center;
+    color: white;
+}
+h4{
+    color: white;
+    margin: 0;
+}

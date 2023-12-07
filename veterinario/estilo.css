@@ -1,0 +1,175 @@
+html, body, main {
+    font-family: "Montserrat";
+    margin: 0;
+
+}
+
+body {
+    background-color: #fff; 
+}
+
+.topo-img {
+    min-width: 100%;
+}
+
+.topo {
+    position: relative;
+    z-index: -1;
+}
+
+.topot {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-size: 100px;
+    font-family: "Montserrat";
+    text-align: center;
+    color: #350b5c;
+}
+
+
+@media screen and (max-width: 768px) {
+    .topot {
+        top: 20%;
+        font-size: 70px;
+    }
+}
+
+.inicio-fim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; 
+    
+}
+
+.inicio-img,
+.fim-img {
+    width: 100%; 
+    max-width: 800px; 
+}
+
+.inicio-fim h2 {
+    font-size: 60px; 
+    font-weight: bold; 
+    line-height: 1.5; 
+}
+
+.inicio-fim p {
+    font-size: 25px; 
+    font-weight: bold; 
+    line-height: 1.5; 
+}
+
+.inicio-fim,
+.inicio-fim img,
+.inicio-fim h2,
+.inicio-fim p {
+    background-color: #551F88; 
+    color: #fff; 
+}
+
+
+.topot {
+    font-size: 80px; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+
+.nova-secao {
+   background-color: white;
+    text-align: center;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nova-secao h2 {
+    color: #c679e9;
+    font-size: 90px;
+    margin: -50px;
+}
+
+.nova-secao img {
+    margin-top: -150px;
+}
+
+.retangulos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.retangulo {
+    width: 700px;
+    height: 400px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.retangulo img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.retangulo:hover img {
+    transform: scale(1.1);
+}
+
+.retangulo .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 30px;
+    width: 500px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    backdrop-filter: blur(29px);
+    border-radius: 20px;
+    background-color: rgba(106, 47, 179, 0.502);
+}
+
+.retangulo:hover .texto {
+    opacity: 1;
+}
+
+.contatos {
+    background-color: #c679e9; /* Fundo lilás */
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: row; /* Alterado para linha para posicionar os elementos lado a lado */
+    justify-content: space-between; /* Adicionado para distribuir o espaço entre os elementos */
+    align-items: center;
+}
+
+.contatos text{
+    font-size: 20px;
+}
+
+.contatos h1{
+    font-size: 70px;
+}
+
+.contatos p{
+    font-size: 50px;
+}
+
+
+

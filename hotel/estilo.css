@@ -1,0 +1,172 @@
+.topo-img{
+    min-width: 100%;
+}
+
+.topo{
+    position: relative;
+    z-index: -1;
+   
+
+}
+
+.topot{
+    position: absolute;
+    top: 30%;
+    left: 13%;
+    font-size: 100px;
+    font-family: "Montserrat";
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .topot{
+        top: 20%;
+        font-size: 70px;
+    }
+}
+
+.janelinha{
+    position: relative;
+    display: flex;
+    width: 80%;
+    padding: 40px;
+    margin: 40px auto;
+    background-color: #caa2ea;
+    border-radius: 20px;
+    gap: 30px;
+}
+
+.caixa{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px){
+    .caixa{
+        width: 90%;
+    }
+}
+
+.agendar{
+    display: flex;
+    background-color: #551F88;
+    border-radius: 20px;
+    padding: 10px;
+    width: 45%;
+    margin: auto;
+    border: 3px solid white;
+    font-size: 40px;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .agendar{
+        width: 120%;
+        font-size: 20px;
+    }
+}
+
+body{
+    background-color: #551F88;
+}
+
+.icon{
+    max-width: 30px;
+}
+
+.frase-principal {
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 35px;
+    color: #90EBFF;
+    font-weight:bold
+}
+
+.conteudo-adicional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px; 
+}
+  
+.conteudo-adicional img {
+    width: 5%; 
+    margin-bottom: 10px; /*espaçamento entre a imagem e o texto */
+    margin: auto;
+}
+
+.conteudo-adicional h2 {
+    font-size: 30px; 
+    margin-top: 10px; 
+    color: rgb(255, 255, 255);
+}
+
+.conteudo-adicional p {
+    font-size: 25px; 
+    margin-top: auto;
+    color: rgb(255, 255, 255);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.topot {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-align: left;
+}
+
+.fundo{
+    padding-top: 20px;
+    padding-bottom: 0.5%;
+    background-color: #E2E2E2;
+}
+
+.frase-principal2{
+    text-align: center;
+    margin-top: 20px; 
+    font-size: 35px;
+    color: #3C096C;
+    font-weight:bold;
+}
+
+
+.caixa-atividade-1 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4px;
+    margin-bottom: 36px;
+    color: rgba(255, 255, 255, 0.836);
+}
+
+#caixa-atividade-1-1 {
+    background-image: url('../img/Hotel 1.png');
+}
+
+#caixa-atividade-1-2 {
+    background-image: url('../img/Hotel\ 2.png');
+}
+
+#caixa-atividade-1-3 {
+    background-image: url('../img/Hotel 3.png');
+}
+
+#caixa-atividade-1-4 {
+    background-image: url('../img/Hotel 4.png');
+}

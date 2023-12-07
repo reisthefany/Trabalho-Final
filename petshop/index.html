@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configuração de caracteres e viewport para responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Título da página -->
+    <title>PetShop</title>
+    <!-- Importação de estilos externos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../estilo-padrao/header.css">
+    <link rel="stylesheet" href="../estilo-padrao/footer.css">
+    <link rel="icon" href="../img/favicon.ico">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-bar">
+            <!-- Logo e link para a página inicial -->
+            <a href="../index.html"><div class="alinhamento">
+            <img class="logo" src="../img/logo.jpeg" alt="">
+            <h1 class="instituto">Instituto <br>Patitas <br>Pet</h1>
+            </div></a>
+            <!-- Ícone do menu mobile e função de alternância -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                    <rect width="30" height="2" fill="#FFF"/>
+                    <rect y="7" width="30" height="2" fill="#FFF"/>
+                    <rect y="14" width="30" height="2" fill="#FFF"/>
+                    <rect y="21" width="30" height="2" fill="#FFF"/>
+                </svg>
+            </div>
+            <!-- Lista de navegação -->
+            <ul class="menu">
+                <li><a href="../hotel/index.html">Hotel</a></li>
+                <li><a href="../petshop/index.html">PetShop</a></li>
+                <li><a href="../veterinario/index.html">Veterinário</a></li>
+                <li><a href="../adocao/adocao.html">Adoção</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <section class="quadrados">
+            <div class="quadrado">
+                <h2>Banho <br> e <br> Tosa</h2>
+                <img src="../img/petshop 1.png" alt="Imagem Banho e Tosa">
+            </div>
+            <div class="quadrado">
+                <h2>Produtos <br> para <br> Cachorros</h2>
+                <img src="../img/petshop 2.png" alt="Imagem Produtos para Cachorros">
+            </div>
+            <div class="quadrado">
+                <h2>Produtos <br> para <br> Gatos</h2>
+                <img src="../img/petshop 3.png" alt="Imagens Produtos para Gatos"
+                
+                alt="Imagem Produtos para Gatos">
+            </div>
+        </section>
+    </main>
+
+     <div class="degrade">
+        <img class="pet" src="../img/banho e tosa 1.png" alt="">  
+        <h2>Banho e Tosa</h2> 
+        <img class="pet" src="../img/banho e tosa 2.png" alt="">
+    </div>
+
+     <!-- Banho e Tosa -->
+     <div class="retangulos">
+        <div class="retangulo">
+            <img src="../img/petshop 4.png" alt="Imagem 1">
+            <div class="texto">
+                <p>Preços para gatos: <br>
+                    Banho: R$60,00 <br>
+                    Tosa higiênica: R$55,00 <br>
+                    Tosa na tesoura: R$65,00 <br>
+                    </p>
+            </div>
+        </div>
+
+        <div class="retangulo">
+            <img src="../img/petshop 5.png" alt="Imagem 2">
+            <div class="texto">
+                <p>Preços para cachorros: <br>
+                    Banho: R$80,00 
+                    <br> Tosa higiênica: R$65,00 
+                    <br>  Tosa na tesoura: R$70,00 
+                    <br>  Tosa na máquina: R$55,00</p>
+            </div>
+        </div> 
+      <!-- Quadrados com título "Agende seu banho e tosa" -->
+<div class="conteudo">
+    <div class="quadrado-externo">
+        <h2>Agende seu banho e tosa</h2>
+    
+        <div class="quadrado-interno">
+            <h3>Banho</h3>
+            <div class="botao-circular" onclick="changeColor(this)"></div>
+        </div>
+    
+        <div class="quadrado-interno">
+            <h3>Banho e Tosa</h3>
+            <div class="botao-circular" onclick="changeColor(this)"></div>
+        </div>
+    
+        <div class="quadrado-interno">
+            <h3>Dia:</h3>
+            <input type="date">
+        </div>
+    
+        <button class="botao-agendar">Agendar</button>
+    </div>
+    
+     <div class="cachorro">
+        <h1>Produtos para <br> Cachorro</h1>
+        <img src="../img/petshop6.png" alt="Imagem Produtos para Cachorro">
+     </div>
+<section class="quadrados-produtos-cachorro">
+    <div class="quadrado-produto">
+        <img src="../img/produto 1.png" alt="Produto 1">
+        <div class="texto-produto">Ração Pedigree Adulto Carne: R$70,00</div>
+    </div>
+    <div class="quadrado-produto">
+        <img src="../img/produto 2.png" alt="Produto 2">
+        <div class="texto-produto">Ração Pedigree Adulto Legumes: R$60,00</div>
+    </div>
+    <div class="quadrado-produto">
+        <img src="../img/produto 3.png" alt="Produto 3">
+        <div class="texto-produto">Ração Pedigree Adulto Carne e Legumes: R$60,00</div>
+    </div>
+    <div class="quadrado-produto">
+        <img src="../img/produto 4.png" alt="Produto 4">
+        <div class="texto-produto">Ração Pedigree Filhote Frango: R$50,00</div>
+    </div>
+</section>
+<section class="quadrados-produtos-cachorro">
+    <div class="quadrado-produto">
+        <img src="../img/produto 5.png" alt="Produto 5">
+        <div class="texto-produto">Patê Pedigree Adulto Frango: R$30,00</div>
+    </div>
+    <div class="quadrado-produto">
+        <img src="../img/produto 6.png" alt="Produto 6">
+        <div class="texto-produto">Patê Pedigree Adulto Carne ao molho: R$30,00</div>
+    </div>
+    <div class="quadrado-produto">
+        <img src="../img/produto 7.png" alt="Produto 7">
+        <div class="texto-produto">Patê Pedigree Adulto Carne: R$30,00</div>
+    </div>
+    <div class="quadrado-produto">
+        <img src="../img/produto 8.png" alt="Produto 8">
+        <div class="texto-produto">Patê Pedigree Filhote Carne e Frango: R$30,00</div>
+    </div>
+</section>
+<section class="quadrados-produtos-cachorro">
+    <div class="quadrado-produto">
+        <img src="../img/produto 9.png" alt="Produto 9">
+        <div class="texto-produto">Tapete Gelado: R$55,00</div>
+    </div>
+    <div class="quadrado-produto">
+        <img src="../img/produto 10.png" alt="Produto 10">
+        <div class="texto-produto">Bebedouro e Comedouro: R$70,00</div>
+    </div>
+    <div class="quadrado-produto">
+        <img src="../img/produto 11.png" alt="Produto 11">
+        <div class="texto-produto">Colete para passeio: R$64,90</div>
+    </div>
+    <div class="quadrado-produto">
+        <img src="../img/produto 12.png" alt="Produto 12">
+        <div class="texto-produto">Cama para pets: R$51,90 á R$85,90</div>
+    </div>
+</section>
+
+<div class="gato">
+    <h1>Produtos para <br> Gatos</h1>
+    <img src="../img/Produtos para Gatos.png" alt="Imagem Produtos para Gatos">
+ </div>
+<section class="quadrados-produtos-cachorro">
+<div class="quadrado-produto">
+    <img src="../img/produto 13.png" alt="Produto 13">
+    <div class="texto-produto">Ração Whiskas Carne: R$70,00</div>
+</div>
+<div class="quadrado-produto">
+    <img src="../img/produto 14.png" alt="Produto 14">
+    <div class="texto-produto">Ração Whiskas Adulto Peixe: R$70,00</div>
+</div>
+<div class="quadrado-produto">
+    <img src="../img/produto 15.png" alt="Produto 15">
+    <div class="texto-produto">Ração Whiskas Frango e Leite: R$70,00</div>
+</div>
+<div class="quadrado-produto">
+    <img src="../img/produto 16.png" alt="Produto 16">
+    <div class="texto-produto">Ração Whiskas Mix de Carnes: R$50,00</div>
+</div>
+</section>
+<section class="quadrados-produtos-cachorro">
+<div class="quadrado-produto">
+    <img src="../img/produto 17.png" alt="Produto 17">
+    <div class="texto-produto">Patê Whiskas Frango: R$30,00</div>
+</div>
+<div class="quadrado-produto">
+    <img src="../img/produto 18.png" alt="Produto 18">
+    <div class="texto-produto">Patê Whiskas Peixe: R$30,00</div>
+</div>
+<div class="quadrado-produto">
+    <img src="../img/produto 19.png" alt="Produto 19">
+    <div class="texto-produto">Patê Whiskas Carne: R$30,00</div>
+</div>
+<div class="quadrado-produto">
+    <img src="../img/produto 20.png" alt="Produto 20">
+    <div class="texto-produto">Patê Whiskas Atún: R$30,00</div>
+</div>
+</section>
+<section class="quadrados-produtos-cachorro">
+<div class="quadrado-produto">
+    <img src="../img/produto 21.png" alt="Produto 21">
+    <div class="texto-produto">Casa Arranhador: R$125,60</div>
+</div>
+<div class="quadrado-produto">
+    <img src="../img/produto 22.png" alt="Produto 22">
+    <div class="texto-produto">Areia Sanitária: R$55,00</div>
+</div>
+<div class="quadrado-produto">
+    <img src="../img/produto 23.png" alt="Produto 23">
+    <div class="texto-produto">Comedouro e Bebedouro: R$64,90</div>
+</div>
+<div class="quadrado-produto">
+    <img src="../img/produto 24.png" alt="Produto 24">
+    <div class="texto-produto">Colete para passeio: R$51,90</div>
+</div>
+</section>
+
+    </div>
+
+   
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-bar pure-g">
+            <div class="pure-u-1 barrinha"></div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <ul class="menu2">
+                    <li><a href="../hotel/index.html">Hotel</a></li>
+                    <li><a href="../petshop/index.html">PetShop</a></li>
+                    <li><a href="../veterinario/index.html">Veterinário</a></li>
+                    <li><a href="../adocao/adocao.html">Adoção</a></li>
+                </ul>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3"> 
+                <a href=""><img class="icon-social" src="../img/insta.png" alt=""></a>
+                <a href=""><img class="icon-social" src="../img/face.png" alt=""></a>
+                <a href=""><img class="icon-social" src="../img/wa.png" alt=""></a>
+                <a href=""><img class="icon-social" src="../img/email.png" alt=""></a> 
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3 logo-container"> <img class="logo" src="../img/logo.jpeg" alt=""></div>
+        </div>
+    </footer>
+
+    <script>
+        // Função para alternar o menu mobile
+        function toggleMenu() {
+            var menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    
+        // Função para mudar a cor do botão circular
+        function changeColor(element) {
+            element.classList.toggle('clicked');
+        }
+    
+    </script>
+</body>
+</html>

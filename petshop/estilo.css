@@ -1,0 +1,285 @@
+body {
+    background-color: #471d7e; 
+    background-image: url('/img/Petshop\ fundo.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Arial', sans-serif; 
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+}
+
+.quadrados {
+    display: flex;
+    flex-direction: column;
+    background-color: #471d7e; 
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px; 
+}
+
+.quadrado h2 {
+    font-size: 60px; 
+    margin: 0;
+}
+
+.quadrado {
+    width: 500px;
+    height: 600px;
+    background-color: #DDBBF8; 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.quadrado img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    margin-top: 20px; 
+}
+
+.degrade {
+    background: linear-gradient(to bottom, #471d7e, #FFFFFF);
+    text-align: center;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.degrade h2 {
+    color: #ffffff;
+    font-size: 100px;
+    margin: 0;
+}
+
+.pet {
+    max-width: 100px;
+    height: auto;
+    margin-top: 5px;
+}
+.retangulos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.retangulo {
+    width: 600px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.retangulo img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.retangulo:hover img {
+    transform: scale(1.1);
+}
+
+.retangulo .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 30px;
+    width: 500px;
+    font-family: "Montserrat";
+    font-weight: 800;
+    backdrop-filter: blur(29px);
+    border-radius: 20px;
+    background-color: rgba(106, 47, 179, 0.502);
+}
+
+.retangulo:hover .texto {
+    opacity: 1;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.quadrado-externo {
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.quadrado-interno {
+    width: 100%;
+    height: 50px;
+    background-color: #d3d3d3;
+    border-radius: 8px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.quadrado-interno h3 {
+    line-height: 50px;
+    margin: 0;
+}
+
+.botao-circular {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.botao-circular.clicked {
+    background-color: rgb(106, 47, 179);
+}
+
+.botao-agendar {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(106, 47, 179);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 35px;
+}
+
+.botao-agendar:hover {
+    background-color: darkpurple;
+}
+
+.produtos-cachorro {
+    text-align: center;
+    margin: 20px;
+}
+
+.produtos-cachorro img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px; 
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.cachorro{
+    display: flex;
+    flex-direction: row;
+}
+
+.cachorro img{
+    width: 200px;
+    height: 200px;
+}
+
+.cachorro h1 {
+    font-size: 50px;
+    color: #471d7e; 
+}
+
+.quadrados-produtos-cachorro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff; 
+    padding: 20px;
+}
+
+.quadrado-produto {
+    width: 200px;
+    height: 200px;
+    background-color: #8a5ebd; 
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.quadrado-produto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quadrado-produto .texto-produto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 16px;
+    backdrop-filter: blur(8px); 
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgba(106, 47, 179, 0.774);
+}
+
+.quadrado-produto:hover .texto-produto {
+    opacity: 1;
+}
+
+.gato{
+    display: flex;
+    flex-direction: row;
+}
+
+.gato img{
+    width: 200px;
+    height: 200px;
+}
+
+.gato h1 {
+    font-size: 50px;
+    color: #471d7e; 
+}
+
+
+
+
+
+
